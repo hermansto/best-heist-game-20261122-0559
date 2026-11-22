@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amber Vault — Museum Heist</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <header>
+    <h1>AMBER VAULT <span>— Museum Heist · Curi Berlian Kuning</span></h1>
+  </header>
+  <div id="hud">
+    <div class="stat">Loot <b id="hud-loot">0 / 4</b></div>
+    <div class="stat">Waktu <b id="hud-time">0:00</b></div>
+    <div class="stat">Pintu <b id="hud-exit" class="locked">TERKUNCI</b></div>
+    <div class="alarm-box">
+      <span class="alarm-label">ALARM</span>
+      <div class="alarm-track"><div id="alarm-fill"></div></div>
+      <b id="hud-alarm">0%</b>
+    </div>
+    <div class="stat">Asap <b id="hud-smoke">●●</b></div>
+    <button id="btn-restart" type="button">↻ Ulang</button>
+  </div>
+  <canvas id="game" width="1240" height="620"></canvas>
+  <footer>
+    <span><b class="thief-dot">●</b> Maling — WASD/panah · <b>Shift</b> lari · <b>E</b> ambil · <b>Q</b> asap</span>
+    <span><b class="guard-dot">●</b> Penjaga merah &nbsp; <b class="cam-dot">●</b> Kamera kuning — ketahuan = alarm naik</span>
+  </footer>
+</div>
+<script src="src/config.js"></script>
+<script src="src/world.js"></script>
+<script src="src/guards.js"></script>
+<script src="src/thief.js"></script>
+<script src="src/render.js"></script>
+<script src="src/shots.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
